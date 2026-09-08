@@ -19,18 +19,32 @@ import java.util.Arrays;
 
 //Use String cars = new String[4] to create an empty array with 4 slots, and then fill them later
 
+//public class Arrys {
+//    public static void main(String[] args) {
+//        String[] name = new String[5];
+//        name[0] = "korim";
+//        name[1] = "rohim";
+//        name[2] = "abir";
+//        name[3] = "abul";
+//        name[4] = "kuddus";
+//
+//        Arrays.sort(name);
+//
+//        System.out.println(Arrays.toString(name));
+//    }
+//
+//}
+
+
+
+
 public class Arrys {
     public static void main(String[] args) {
-        String[] name = new String[5];
-        name[0] = "korim";
-        name[1] = "rohim";
-        name[2] = "abir";
-        name[3] = "abul";
-        name[4] = "kuddus";
+        // A 1D array of 4 elements
+        int[] row = {10, 20, 30, 40};
 
-        Arrays.sort(name);
+        System.out.println(row[2]); // Outputs 30
 
-        System.out.println(Arrays.toString(name));
     }
 
 }

@@ -1,9 +1,26 @@
 //public class Second {
 //    public static void main(String[] args) {
-//        Main myCar = new Main();
+//        Student s = new Student();
+//        s.setName("Riyad");
+//        s.setRoll(333);
 //
-//        myCar.fullThrottle();
-//        myCar.speed(280);
+//        System.out.println("Name: " + s.getName());
+//        System.out.println("Roll: " + s.getRoll());
+//    }
+//
+//}
+//
+
+
+
+//class Second {
+//    public static void main(String[] args) {
+//        Address r = new  Address();
+//        r.getData("Riyad", 842103);
+//        r.getData(3.59F);
+//        r.getDAta("Dhaka");
+//
+//        r.display();
 //    }
 //
 //}

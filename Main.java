@@ -173,7 +173,7 @@
 //
 //        if (x > y) {
 //            System.out.println("x is greater than y");
-//            System.out.println("Both lines are part of the if");
+//            System.out.println("Both lines are part of ThE if");
 //        }
 //
 //        System.out.println("I am outside if, \" not part of if \"");
@@ -202,7 +202,7 @@
 //            System.out.println("x is greater than 10");
 //
 //            // Nested if
-//            if (y > 25) {
+//            if(y > 25) {
 //                System.out.println("y is also greater than 20");
 //            }
 //        }
@@ -871,7 +871,7 @@
 //
 //        for (int n: numbers) {
 //            if (n < 3) {
-//                continue; //Less than 3 always be skip
+//                continue; //Less than 3 always be skIp
 //            }
 //            if (n == 9) {
 //                break;
@@ -1461,7 +1461,7 @@
 //
 //        System.out.println(x);
 //
-//        // } The block ends here
+//        // } The block ends herE
 //
 //        //Code here CANNOT use X
 //
@@ -1947,7 +1947,7 @@
 
 
 // A constructor in java is a special method that is used to initialize objects.*********
-// The constructor is called when a objects of class is created.*****
+// The constructor is called when A objects of class Is created.*****
 
 
 // Create a Main class.
@@ -2000,9 +2000,9 @@
 //    public static void main(String[] args) {
 //        Main myObj = new Main(25, "shadow");
 //
-//        String pname = myObj.modelName;
+//        String p_name = myObj.modelName;
 //        int pYear = myObj.modelYear;
-//        System.out.println("Name: " + pname + " " + pYear);
+//        System.out.println("Name: " + p_name + " " + pYear);
 //
 //    }
 //
@@ -2088,21 +2088,86 @@
 
 
 
-import java.util.Arrays;
+
+
+//public class Main {
+//    protected String brand = "Ford";
+//
+//    public void honk() {
+//        System.out.println(" tuut  tuut");
+//    }
+//}
+//
+//
+//class Car extends Main {
+//    private String modelName = "mustang";
+//
+//    public static void main(String[] args) {
+//        Car myCar = new Car();
+//        myCar.honk();
+//
+//        System.out.println(myCar.brand + " " + myCar.modelName);
+//    }
+//
+//}
+
+
+//class Animal {
+//
+//    public void sound(){
+//        System.out.println("Animal makes sound");
+//    }
+//}
+//
+//class Dog extends Animal {
+//
+//    @Override
+//    public void sound(){
+//        System.out.println("Dog barks");
+//    }
+//}
+//
+//class Cat extends Animal {
+//
+//    @Override
+//    public void sound(){
+//        System.out.println("Cat meows");
+//    }
+//}
+//
+//public class Main {
+//
+//    public static void main(String[] args) {
+//
+//        Animal myDog = new Dog();
+//        myDog.sound();
+//
+//        Animal myCat = new Cat();
+//        myCat.sound();
+//    }
+//}
+
+
+
+import java.io.File;        // Import the File class
+import java.io.IOException;     // Import IOException to handle errors
 
 public class Main {
     public static void main(String[] args) {
-        int[] numbers = new int[5];
-        numbers[2] = 5;
-        numbers[3] = 6;
-        numbers[4] = 4;
-        numbers[0] = 7;
-        numbers[1] = 2;
+        try {
+            File file = new File("Info.txt");  //Create file object
 
-
-
-        System.out.println(Arrays.toString(numbers));
+            if (file.createNewFile()) {   //try to create the file
+                System.out.println("File created: " + file.getName());
+            }
+            else {
+                System.out.println("File already exists.");
+            }
+        }
+        catch (IOException e) {
+            System.out.println("an error occurred.");
+            e.printStackTrace(); //Show error details
+        }
     }
 
 }
-
